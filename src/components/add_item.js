@@ -20,6 +20,8 @@ class AddItem extends Component {
     }
 
     render(){
+        console.log('Add Item Props:', this.props);
+
         return (
             <div>
                 <h1 className="center">Add To Do Item</h1>
@@ -29,7 +31,7 @@ class AddItem extends Component {
                         <Link to='/' className="btn green darken-2">Back To List</Link>
                     </div>
                 </div>
-                
+
                 <form onSubmit={this.handleAddingItem}>
                     <div className="row">
                         <div className="input-field col s8 offset-s2">
